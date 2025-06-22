@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-taviraj: "Taviraj", serif;
+  --color-primary: rgb(32, 160, 204);
+  --color-secodary: rgb(80, 232, 252);
+  --background: rgb(4, 32, 48);
+  --text-light: rgb(232, 248, 252);
+  --text-dark: rgb(4, 28, 32);
+  --glass-1: rgba(32, 160, 204, 0.3);
+  --glass-2: rgba(80, 232, 252, 0.3);
+  --error: rgb(204, 48, 32);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: var(--font-poppins);
+}
+
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--background);
+}
+
+body {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  padding-top: 0;
+  gap: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-taviraj);
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

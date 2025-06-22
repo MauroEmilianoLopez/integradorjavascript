@@ -1,0 +1,104 @@
+body > header {
+  position: fixed;
+  z-index: 8;
+  top: 1rem;
+  padding: 0.25rem;
+  background-color: var(--glass-1);
+  box-shadow: 0 0 0.25rem 0rem var(--glass-1);
+  border-radius: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  backdrop-filter: blur(0.05rem);
+  @media screen and (max-width: 1024px) {
+    width: 50%;
+  }
+  & h1 {
+    font-size: 1rem;
+    @media screen and (max-width: 1024px) {
+      flex: 1;
+    }
+  }
+  & nav {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    transform: none;
+    transition: all 0.3s ease-in-out;
+    & a {
+      color: var(--text-light);
+      text-decoration: none;
+    }
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+  & form {
+    display: flex;
+    gap: 0.25rem;
+    & button {
+      width: auto;
+      height: auto;
+      padding: 0.25rem;
+      aspect-ratio: 1 / 1;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      border-radius: 50%;
+      background-color: var(--color-primary);
+      & svg {
+        width: 100%;
+        stroke: var(--text-light);
+      }
+      & output {
+        position: absolute;
+        top: -0.5rem;
+        left: -0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: var(--text-light);
+        font-size: 0.75rem;
+        width: 1.25rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+      }
+      &:last-child {
+        display: none;
+        @media screen and (max-width: 1024px) {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+#navbar {
+  display: none;
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    z-index: 9;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+    & a {
+      color: var(--text-light);
+      text-decoration: none;
+    }
+    &.active {
+      transform: translateX(0%);
+    }
+  }
+}
