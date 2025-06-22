@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dummy Market</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DM</h1>
+      <nav>
+        <a href="#hero">Start</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+      <form>
+        <button type="button" id="btnCart">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="8" cy="21" r="1" />
+            <circle cx="19" cy="21" r="1" />
+            <path
+              d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+            />
+          </svg>
+          <output id="quantity">1</output>
+        </button>
+        <button type="button" id="btnMenu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 12h16" />
+            <path d="M4 18h16" />
+            <path d="M4 6h16" />
+          </svg>
+        </button>
+      </form>
+    </header>
+    <aside id="cart">
+      <header>
+        <h3>Cart</h3>
+        <form>
+          <button type="button" id="btnClearCart">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 6h18" />
+              <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+              <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+              <line x1="10" x2="10" y1="11" y2="17" />
+              <line x1="14" x2="14" y1="11" y2="17" />
+            </svg>
+          </button>
+        </form>
+      </header>
+      <ul>
+        <li>
+          <picture>
+            <img src="http://placehold.co/160/orange/white?text=1" alt="" />
+          </picture>
+          <dl>
+            <dt>Nombre del Producto</dt>
+            <dd>$15.000</dd>
+          </dl>
+          <form action="">
+            <button type="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14" />
+              </svg>
+            </button>
+            <output>1</output>
+            <button type="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M5 12h14" />
+                <path d="M12 5v14" />
+              </svg>
+            </button>
+          </form>
+          <form>
+            <button type="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </aside>
+    <main id="hero">
+      <img src="/assets/wallpaper.webp" alt="" />
+      <article>
+        <h2>Dummy Market</h2>
+        <h3>Una tienda de elegancía</h3>
+      </article>
+    </main>
+    <section id="about">
+      <header>
+        <h2>Our Proccess</h2>
+      </header>
+      <ul>
+        <li>
+          <picture>
+            <img src="https://placehold.co/320/2096CC/white?text=1" alt="" />
+          </picture>
+          <dl>
+            <dt>Contact</dt>
+            <dd>Nos contactamos con los mejores proveedores</dd>
+          </dl>
+        </li>
+        <li>
+          <picture>
+            <img src="https://placehold.co/320/2096CC/white?text=2" alt="" />
+          </picture>
+          <dl>
+            <dt>Select</dt>
+            <dd>
+              Seleccionamos los productos más solicitados por nuestros clientes
+            </dd>
+          </dl>
+        </li>
+        <li>
+          <picture>
+            <img src="https://placehold.co/320/2096CC/white?text=3" alt="" />
+          </picture>
+          <dl>
+            <dt>Sell</dt>
+            <dd>Publicamos en nuestra tienda esos productos</dd>
+          </dl>
+        </li>
+      </ul>
+    </section>
+    <section id="products">
+      <form>
+        <input type="radio" value="all" id="all" name="category" />
+        <label for="all">All</label>
+        <input
+          type="radio"
+          value="men-shirts"
+          id="men-shirts"
+          name="category"
+        />
+        <label for="men-shirts">Shirts</label>
+        <input type="radio" value="mens-shoes" id="men-shoes" name="category" />
+        <label for="men-shoes">Shoes</label>
+        <input
+          type="radio"
+          value="men-watches"
+          id="men-watches"
+          name="category"
+        />
+        <label for="men-watches">Watches</label>
+      </form>
+      <ul>
+        <li>
+          <picture>
+            <img src="http://placehold.co/160/orange/white?text=1" alt="" />
+          </picture>
+          <dl>
+            <dt>Nombre del Producto</dt>
+            <dd>$15.000</dd>
+          </dl>
+          <form>
+            <button type="button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="8" cy="21" r="1" />
+                <circle cx="19" cy="21" r="1" />
+                <path
+                  d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                />
+              </svg>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </section>
+    <section id="contact">
+      <nav>
+        <a
+          href="https://instagram.com/dummy_market"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+            />
+            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+            <path d="M16.5 7.5v.01" />
+          </svg>
+        </a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-meta"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M12 10.174c1.766 -2.784 3.315 -4.174 4.648 -4.174c2 0 3.263 2.213 4 5.217c.704 2.869 .5 6.783 -2 6.783c-1.114 0 -2.648 -1.565 -4.148 -3.652a27.627 27.627 0 0 1 -2.5 -4.174z"
+            />
+            <path
+              d="M12 10.174c-1.766 -2.784 -3.315 -4.174 -4.648 -4.174c-2 0 -3.263 2.213 -4 5.217c-.704 2.869 -.5 6.783 2 6.783c1.114 0 2.648 -1.565 4.148 -3.652c1 -1.391 1.833 -2.783 2.5 -4.174z"
+            />
+          </svg>
+        </a>
+        <a href="http://github.com/" target="_blank" rel="noopener noreferrer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+        </a>
+      </nav>
+
+      <form action="" id="contactForm">
+        <fieldset>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Write your name" />
+          <small id="feedbackName"></small>
+        </fieldset>
+        <fieldset>
+          <label for="email">email</label>
+          <input type="email" id="email" placeholder="Write your email" />
+          <small id="feedbackEmail"></small>
+        </fieldset>
+      </form>
+    </section>
+    <footer></footer>
+  </body>
+</html>
